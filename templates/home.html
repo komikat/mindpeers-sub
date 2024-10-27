@@ -1,0 +1,31 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+<style>
+  html {
+      width: 60vw;
+      margin: auto;
+      margin-top: 20px;
+      font-family: "Newsreader";
+  }
+</style>
+<hr>
+<h2>Hindustan Consultancy Services</h2>
+<h1>Mental health analyzer</h1>
+<p>Powered by OpenAI gpt4o-mini</p>
+<hr>
+
+
+
+<form hx-get="/get_user" hx-swap="innerHTML">
+  <p>Please enter your username, we will automatically detect if you have used our tool in the past.</p>
+  <br>
+    <input type="text" name="q" id="username" placeholder="John Doe" required>
+    <button type="submit">Log In</button>
+</form>
+
+
+<div id="user_history"></div>
+
+<script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
